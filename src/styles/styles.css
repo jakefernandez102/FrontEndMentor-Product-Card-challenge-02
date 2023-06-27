@@ -3,6 +3,7 @@
    /* ### Primary */
 
  --darkCyan: hsl(158, 36%, 37%);
+ --veryDarkCyan: hsl(158, 36%, 31%);
  --cream: hsl(30, 38%, 92%);
 
 /* /* /* ### Neutral */ 
@@ -181,8 +182,9 @@ img{
    opacity: .7;
 }
 .card__bottom__button{
+   cursor: pointer;
    border: none;
-   background-color: var(--darkCyan);
+   background-color: var(--darkCyan) ;
    color: var(--white);
    margin-bottom: 2.5rem;
    padding: 2rem 0;
@@ -193,6 +195,12 @@ img{
    justify-content: center;
    align-items: center;
    gap: 2rem;
+   transition: background-color 300ms ease;
+}
+.card__bottom__button:hover{
+   
+   background-color: var(--veryDarkCyan) ;
+   
 }
 @media screen and (min-width: 768px){
    .price{
